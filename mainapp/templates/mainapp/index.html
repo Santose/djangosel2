@@ -1,0 +1,18 @@
+
+
+{% extends 'layouts/layout.html' %}
+
+{% block title %} Inicio {% endblock %}
+
+{% block content %}
+
+    <p> este el el {{title}} </P>
+    {% if messages %}
+        {% for mensaje in messages %}
+            <div class='mensaje' >{{mensaje}} </div>
+        {% endfor %}
+
+    {% endif %}
+    
+
+{% endblock %}
